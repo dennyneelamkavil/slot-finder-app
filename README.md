@@ -24,6 +24,12 @@ This is a scheduling tool built with **Next.js** that helps you find common avai
 npm install
 ```
 
+💡 **Note**: If you face dependency version conflicts (especially with `react-datepicker` or `react-multi-select-component`), use the following command instead:
+
+```bash
+npm install ioredis react-datepicker react-multi-select-component --legacy-peer-deps
+```
+
 ### 3. Set up Redis
 
 You need access to a Redis instance. You can use:
