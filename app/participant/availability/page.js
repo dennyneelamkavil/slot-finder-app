@@ -99,7 +99,7 @@ export default async function AvailabilityPage({ searchParams }) {
         end={end}
       />
       <hr className="my-6 border-gray-300" />
-      {Object.keys(slots).length > 0 && (
+      {Object.keys(slots).length > 0 ? (
         <div className="space-y-6 border p-6 rounded-lg shadow-md bg-yellow-50">
           <h2 className="text-2xl mb-4 text-center font-bold underline">
             Available Slots
@@ -119,6 +119,13 @@ export default async function AvailabilityPage({ searchParams }) {
               </div>
             </div>
           ))}
+        </div>
+      ) : (
+        <div className="p-6 bg-white rounded-lg shadow-md text-center">
+          <h2 className="text-2xl font-semibold mb-4">No Available Slots</h2>
+          <p className="text-gray-700">
+            No available slots found for the selected participants and dates.
+          </p>
         </div>
       )}
     </main>
