@@ -23,10 +23,14 @@ async function seed() {
         { start: "14:00", end: "16:30" },
       ],
       Tuesday: [{ start: "09:00", end: "18:00" }],
+      Wednesday: [{ start: "09:00", end: "18:00" }],
+      Friday: [{ start: "09:00", end: "18:00" }],
     },
     2: {
       Monday: [{ start: "09:00", end: "18:00" }],
       Tuesday: [{ start: "09:00", end: "11:30" }],
+      Wednesday: [{ start: "09:00", end: "18:00" }],
+      Friday: [{ start: "09:00", end: "18:00" }],
     },
     3: {
       Monday: [{ start: "09:00", end: "18:00" }],
